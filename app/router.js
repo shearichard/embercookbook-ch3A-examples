@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('helloworld');
   this.route('conditional');
+  this.route('student');
 });
 
 export default Router;

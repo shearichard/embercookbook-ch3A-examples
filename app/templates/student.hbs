@@ -1,0 +1,22 @@
+<h2>Student</h2>
+<p>This is <code>/app/templates/student.hbs</code></p>
+<h3>Student List</h3>
+<div>
+{{#each students as |student|}}
+    {{student.name}}<br>
+{{/each}}
+</div>
+<h3>Student List - Alternate</h3>
+<div>
+{{#each students as |student index|}}
+    {{student.name}} is at index {{index}}<br>
+{{/each}}
+</div>
+<h3>Ex-Student List</h3>
+<div>
+{{#each exstudents as |exstudent|}}
+    {{exstudent.name}}<br>
+{{else}}
+    There are no ex-students
+{{/each}}
+</div>
